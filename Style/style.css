@@ -227,7 +227,6 @@ main, footer, nav ul{
 }
 
 #box-ubi{
-    
     border: 10px; 
     background-color: white;
     margin: 0 auto;
@@ -248,3 +247,30 @@ main, footer, nav ul{
     font-weight: 500;
 }
 
+/*Pagína Donaciones*/
+
+#box-don{
+    border: 10px solid #bed1cf;
+    background-color: #bed1cf;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 30px;
+    font-size: 20px;
+    padding: 40px;
+    text-align: justify;
+}
+
+#txt-don{
+
+}
+
+#box{
+    border: 10px solid #bed1cf;
+    background-color: #f5bce5;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 30px;
+    font-size: 20px;
+    padding: 40px;
+    text-align: justify;
+}
