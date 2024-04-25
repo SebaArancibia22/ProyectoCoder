@@ -8,10 +8,8 @@
 
 header{
     width: 100%;
-    height: 16rem;
     background-color: #f5bce5;
     background-size: cover;
-
 }
 
 .h-logo{
@@ -20,22 +18,21 @@ header{
 }
 
 .logo{
-    width: 301px;
+    width: 305px;
 }    
-
+/*Cajas del nav*/
 nav ul{
     display: flex;
     justify-content: center;
     gap: 5rem;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     align-items: center;
-    padding: 10px;
-    background-color: beige;
-
+    padding: 20px;
+    margin: auto auto ;
 }
-
+/*Estilos de las cajas del nav*/
 nav li{
     width: 200px;
     text-align: center;
@@ -50,25 +47,23 @@ nav li:hover{
     background-color: #f5bce5;
 }
 
-.banner {
-    width: 100%;
-    height: 25rem;
-    background-color: blueviolet;
-}
-
-main, footer, nav ul{
+body{
     background-color: beige;
     background-image: url(/Imagenes/fondo.png);
 }
-
-.carousel-inner{
-    text-align: center;
-}
-
-#carouselExample{
-    background-color: #bed1cf;
+#cwe{
     width: 70%;
     margin: 0 auto;
+}
+
+.contenedor{
+    max-width: 100%;
+    margin: auto;
+}
+.carousel-item{
+    height: 100%;
+    background: no-repeat center center scroll;
+    background-size: cover;
 }
 
 #p-ult{
@@ -82,7 +77,7 @@ main, footer, nav ul{
     margin: 0 auto;
 }
 
-#contenedor{
+#cont-img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 80px;
@@ -91,13 +86,6 @@ main, footer, nav ul{
     width: 70%;
     height: 70%;
     margin: 0 auto;
-}
-
-#p1{
-    
-}
-#datos{
-    
 }
 
 .imagen{
@@ -324,3 +312,208 @@ main, footer, nav ul{
     background-color: lightgray;
     color: black;
 }
+
+@media (max-width: 430px){
+
+        /*Mediaquery de Inicio y de Clases*/
+
+    body{
+        background: none;
+    }
+    
+    .logo{
+        width: 150px;
+    }
+    #cwe{
+        width: 100%;
+        margin: 0 auto;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        list-style: none;
+        font-size: 18px;
+        width: 100%;
+        align-items: center;
+        margin: auto auto ;
+        padding-right: 0px;
+    }
+    nav li{
+        width: 400px;
+        text-align: center;
+        border: 2px dashed black;
+        background-color: white;
+        transition:linear 0.3s;
+        cursor: pointer;
+    }
+    #p-ult{
+            background-color: #bed1cf;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+    #cont-img{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px;
+            gap: 10px;
+            border: 5px solid #f5bce5;
+            background-color: #f5bce5;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*mediaquery de Footer*/
+
+        .pie-pag{
+            width: 100%;
+            height: 4rem;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 5px solid #bed1cf;
+            background-color: #bed1cf;
+        }
+        .pie-c{
+            display: flex;
+            justify-content: center;
+            background-color: #bed1cf;
+            border: 5px solid #bed1cf;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 13px;
+        }
+
+        /*mediaquery de Nosotros*/
+
+        #box-nos{
+            border: 10px solid #bed1cf;
+            background-color: #bed1cf;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 15px;
+            padding: 10px;
+            text-align: justify;
+        }
+        
+        #p-nos{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        
+        #m2{
+            background-color: #f5bce5;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction:column-reverse;
+            padding: 10px;
+            gap: 20px;
+            
+        }
+        
+        #box-ubi{
+            border: 10px; 
+            background-color: white;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 15px;
+            padding: 30px;
+            text-align: justify;
+            border-radius: 50PX;
+            box-shadow: 5px 5px 5px;
+        }
+        
+        #map{
+            width: 100%;
+            height: 200px;
+            border-radius: 50px;
+            box-shadow: 5px 5px 5px;
+        }
+        
+        #p-ubi{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+                /*mediaquery de Donaciones*/
+
+        #box-don{
+            background-color: #bed1cf;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 15px;
+            padding: 40px;
+            text-align: justify;
+        }
+        #p-don{
+            font-size: 25px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-align: center;
+        }
+        #txt-don p{
+            background-color: #f5bce5;
+            margin: 0 auto;
+            width: 100%;
+            font-size: 25px;
+            padding-top: 30px;
+            text-align: center;
+            font-weight: 500;
+        }
+        #box{
+            background-color: #f5bce5;
+            margin: 0 auto;
+            width: 100%;
+            padding: 10px;
+            text-align: justify;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #box1{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            text-align: center;
+            font-size: 23px;
+            padding: 30px;
+            border-radius: 50px;
+        }
+        #box2{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            text-align: center;
+            font-size: 23px;
+            padding: 30px;
+            border-radius: 50px;
+        }
+        #box3{
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            text-align: center;
+            font-size: 23px;
+            padding: 30px;
+            border-radius: 50px;
+        }
+        #bttn{
+            width: 100px;
+            height: 40px;
+        }
+    }
+
+
