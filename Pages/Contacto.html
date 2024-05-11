@@ -61,31 +61,34 @@
                         <i id="i-con"> Puedes contactarnos en el teléfono</i><p id="blk">+569 8929 1092.</p><br><i>O también puedes contactarnos a través de correo electrónico para contarnos lo que necesites, o enviarnos <br>información sobre casos de maltrato o abandono, escribiendo a: <p id="blk">HogarPatitas@gmail.cl</p> </i> 
                     </figure>
                 </section>
-            <form action="#" id="form">
-                <div>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" required>
-                </div>
-                <div>
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text" required>
-                </div>
-                <div>
-                    <label for="Correo">Correo:</label>
-                    <input type="email" required>
-                </div>
-                <div>
-                    <label for="Teléfono">Teléfono:</label>
-                    <input type="tel" required>
-                </div>
-                <div>
-                    <label for="Tu Mensaje">Tu Mensaje:</label>
-                    <textarea id="Tu Mensaje" name="Tu Mensaje" rows="5" cols="40"></textarea>
-                </div>
-            </form>
-            <div id="btn-a">
-                <button id="btn">Enviar</button>
+            <form class="form-con">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" >Correo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ejemplo@gmail.com">
+                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie.</div>
             </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" >Nombre</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Apepllido</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Apelido">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Teléfono</label>
+                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="+56x xxx xxx">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribenos tu pregunta, duda o consluta que tengas acera de nosotros y alguien te contactara para poder ayudarte"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">¿Quieres recibir avisos de máscotas nuevas en adopción?</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </main>
 <!--Pie de pagina-->
         <footer>

@@ -185,33 +185,11 @@ h4{
 #blk{
     font-weight: 500;
 }
-#form{
-    background-color: #f5bce5;
-    margin: 0 auto;
+.form-con{
     width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 18px;
+    margin: 0 auto;
+    background-color: #f5bce5;
     padding: 30px;
-    padding-bottom: 0;
-    font-weight: 600;
-}
-
-#btn-a{
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-    background-color: #f5bce5;
-    padding-bottom: 30px;
-}
-#btn{
-    width: 100px;
-    height: 50px;
-    font-weight: 500;
-}
-#btn:hover{
-    background-color: lightgray;
-    color: black
 }
 
 /*Pagína de Nosotros*/
