@@ -107,7 +107,7 @@ nav li:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
+  padding: 30px;
   width: 70%;
   margin: 0 auto;
   background-color: #f5bce5;
@@ -337,7 +337,6 @@ nav li:hover {
   justify-content: end;
   padding: 30px;
   gap: 20px;
-  box-shadow: 5px 5px 5px;
 }
 #m2 #map {
   border-radius: 50px;
