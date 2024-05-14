@@ -8,7 +8,7 @@
 
 body {
   background-color: beige;
-  background-image: url(/images/fondo.png);
+  background-image: url(../images/fondo.png);
 }
 
 header {
@@ -123,6 +123,7 @@ nav li:hover {
   position: relative;
   border: 5px solid #bed1cf;
   border-radius: 30px;
+  box-shadow: 5px 5px 5px;
 }
 .grid-ult .grid-card img {
   width: 100%;
@@ -191,6 +192,7 @@ nav li:hover {
   position: relative;
   border: 5px solid #bed1cf;
   border-radius: 30px;
+  box-shadow: 5px 5px 5px;
 }
 .box-don .box-card img {
   width: 100%;
@@ -278,6 +280,7 @@ nav li:hover {
   padding-top: 30px;
   text-align: center;
   font-weight: 500;
+  text-decoration: underline;
 }
 #caja-don #box {
   padding: 20px;
@@ -295,6 +298,9 @@ nav li:hover {
   font-size: 23px;
   padding: 50px;
   border-radius: 30px;
+}
+#caja-don #box .boxes p {
+  padding: 20px;
 }
 #caja-don #box #bttn {
   width: 120px;
@@ -331,9 +337,11 @@ nav li:hover {
   justify-content: end;
   padding: 30px;
   gap: 20px;
+  box-shadow: 5px 5px 5px;
 }
 #m2 #map {
   border-radius: 50px;
+  box-shadow: 5px 5px 5px;
 }
 #m2 #box-ubi {
   border: 10px;
@@ -344,6 +352,7 @@ nav li:hover {
   padding: 30px;
   text-align: justify;
   border-radius: 50PX;
+  box-shadow: 5px 5px 5px;
 }
 #m2 #box-ubi #p-ubi {
   text-align: center;
@@ -360,51 +369,99 @@ nav li:hover {
   .logo {
     width: 150px;
   }
-  #cwe {
-    width: 100%;
-    margin: 0 auto;
-  }
   nav ul {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     list-style: none;
     font-size: 18px;
     width: 100%;
     align-items: center;
+    padding: 10px;
     margin: auto auto;
-    padding-right: 0px;
   }
   nav li {
-    width: 400px;
+    width: 200px;
     text-align: center;
     border: 2px dashed black;
+    padding: 10px;
     background-color: white;
     transition: linear 0.3s;
     cursor: pointer;
   }
+  nav li:hover {
+    background-color: #bed1cf;
+  }
+  #carrusel {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #carrusel .carousel-item {
+    height: 100%;
+    background: no-repeat center center scroll;
+    background-size: cover;
+  }
   #p-ult {
     background-color: #bed1cf;
     width: 100%;
-    height: 60px;
+    height: 8rem;
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
-    font-size: 30px;
-    padding-top: 10px;
+    font-size: 3rem;
+    margin: 0 auto;
+    font-weight: 600;
   }
   .grid-ult {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
     width: 100%;
     margin: 0 auto;
     background-color: #f5bce5;
   }
-  h4 {
+  .grid-ult .grid-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+    transition: 0.5s;
+    position: relative;
+    border: 5px solid #bed1cf;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px;
+  }
+  .grid-ult .grid-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  .grid-ult .hover-index {
+    background-color: rgba(227, 122, 187, 0.631372549);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .grid-ult .hover-index:hover {
+    opacity: 1;
+  }
+  .grid-ult .hover-index h4 {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
   }
   /*mediaquery de Footer*/
@@ -448,7 +505,7 @@ nav li:hover {
     margin: 0 auto;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: end;
     padding: 30px;
     gap: 20px;
@@ -548,84 +605,83 @@ nav li:hover {
   #box-con #blk {
     font-weight: 500;
   }
-}
-.form-con {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #f5bce5;
-  padding: 30px;
-}
-
-/*Pagina de Adopciones*/
-#box-adop {
-  background-color: #bed1cf;
-  margin: 0 auto;
-  width: 100%;
-  font-size: 20px;
-  padding: 40px;
-  text-align: justify;
-}
-#box-adop p {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-.box-don {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 30px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #f5bce5;
-}
-.box-don .box-card {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  gap: 20px;
-  transition: 0.5s;
-  position: relative;
-  border: 5px solid #bed1cf;
-  border-radius: 30px;
-}
-.box-don .box-card img {
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  object-fit: cover;
-}
-.box-don .box-card .box-card-content {
-  background-color: rgba(227, 122, 187, 0.631372549);
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  color: black;
-  padding: 15px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  transition: 0.5s;
-  opacity: 0;
-  cursor: pointer;
-}
-.box-don .box-card .box-card-content:hover {
-  opacity: 1;
-}
-.box-don .box-card h3 {
-  text-align: center;
-  font-size: 30px;
-  text-decoration: underline;
-  font-weight: 700;
-}
-.box-don .box-card .pa-adop {
-  font-size: 23px;
+  .form-con {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f5bce5;
+    padding: 30px;
+  }
+  #box-adop {
+    background-color: #bed1cf;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 20px;
+    padding: 40px;
+    text-align: justify;
+  }
+  #box-adop p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  .box-don {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f5bce5;
+  }
+  .box-don .box-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20px;
+    transition: 0.5s;
+    position: relative;
+    border: 5px solid #bed1cf;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px;
+  }
+  .box-don .box-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  .box-don .box-card .box-card-content {
+    background-color: rgba(227, 122, 187, 0.631372549);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .box-don .box-card .box-card-content:hover {
+    opacity: 1;
+  }
+  .box-don .box-card h3 {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  .box-don .box-card .pa-adop {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

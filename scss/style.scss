@@ -23,53 +23,106 @@ body{
 .logo{
     width: 150px;
 }
-#cwe{
+nav{
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        list-style: none;
+        font-size: 18px;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+        margin: auto auto ;
+    }
+    li{
+        width: 200px;
+        text-align: center;
+        border: 2px dashed black;
+        padding: 10px;
+        background-color: white;
+        transition:linear 0.3s;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-sec;
+        }
+    }
+}
+
+#carrusel{
     width: 100%;
     margin: 0 auto;
+    .carousel-item{
+        height: 100%;
+        background: no-repeat center center scroll;
+        background-size: cover;
 }
-nav ul{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    list-style: none;
-    font-size: 18px;
-    width: 100%;
-    align-items: center;
-    margin: auto auto ;
-    padding-right: 0px;
-}
-nav li{
-    width: 400px;
-    text-align: center;
-    border: 2px dashed black;
-    background-color: white;
-    transition:linear 0.3s;
-    cursor: pointer;
 }
 #p-ult{
-        background-color: #bed1cf;
+background-color: $color-sec;
+width: 100%;
+height: 8rem;
+display: flex;
+justify-content: center ;
+align-items: center;
+font-size: 3rem;
+margin: 0 auto;
+font-weight: 600;
+
+}
+.grid-ult{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color-prin;
+    .grid-card{
         width: 100%;
-        height: 60px;
         display: flex;
-        text-align: center;
-        align-items: center;
-        font-size: 30px;
-        padding-top: 10px;
-    }
-    .grid-ult{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content: space-around;
         gap: 20px;
-        padding: 20px;
+        transition: 0.5s;
+        position: relative;
+        border: 5px solid $color-sec;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+    }
+    .hover-index{
+        background-color: #e37abba1;
+        border-radius: 20px;
         width: 100%;
-        margin: 0 auto;
-        background-color: #f5bce5;
+        height: 100%;
+        color: black;
+        padding: 15px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        transition: 0.5s;
+        opacity: 0;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        h4{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 700;
+        }
     }
-    h4{
-        text-align: center;
-        font-size: 30px;
-        font-weight: 700;
-    }
+}
 
     /*mediaquery de Footer*/
 
@@ -116,7 +169,7 @@ nav li{
         margin: 0 auto;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: end;
         padding: 30px;
         gap: 20px;
@@ -225,7 +278,7 @@ nav li{
             font-weight: 500;
         }
     }
-}
+
 .form-con{
     width: 100%;
     margin: 0 auto;
@@ -235,7 +288,6 @@ nav li{
 
 //Adopta
 
-/*Pagina de Adopciones*/
 
 #box-adop{
     background-color: $color-sec;
@@ -252,58 +304,61 @@ nav li{
     }
 }
 
-.box-don{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 30px;
-        width: 100%;
-        margin: 0 auto;
-        background-color: $color-prin;
-        .box-card{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items:flex-start;
-            justify-content: space-around;
+    .box-don{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            transition: 0.5s;
-            position: relative;
-            border: 5px solid $color-sec;
-            border-radius: 30px;
-            img {
+            padding: 30px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: $color-prin;
+            .box-card{
                 width: 100%;
-                height: 100%;
-                border-radius: 25px;
-                object-fit: cover;
-            }
-            .box-card-content {
-                background-color: #e37abba1;
-                border-radius: 20px;
-                width: 100%;
-                height: 100%;
-                color: black;
-                padding: 15px;
-                position: absolute;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-direction: row;
+                align-items:flex-start;
+                justify-content: space-around;
                 gap: 20px;
                 transition: 0.5s;
-                opacity: 0;
-                cursor: pointer;
-                &:hover {
-                    opacity: 1;
+                position: relative;
+                border: 5px solid $color-sec;
+                border-radius: 30px;
+                box-shadow: 5px 5px 5px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 25px;
+                    object-fit: cover;
                 }
-            }
-            h3{
-                text-align: center;
-                font-size: 30px;
-                text-decoration: underline;
-                font-weight: 700;
-            }
-            .pa-adop{
-                font-size: 23px;
+                .box-card-content {
+                    background-color: #e37abba1;
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 100%;
+                    color: black;
+                    padding: 10px;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 20px;
+                    transition: 0.5s;
+                    opacity: 0;
+                    cursor: pointer;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                h3{
+                    text-align: center;
+                    font-size: 25px;
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
+                .pa-adop{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
         }
     }
