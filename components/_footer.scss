@@ -1,0 +1,31 @@
+/*Footer*/
+
+.pie-pag{
+    width: 70%;
+    height: 6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-sec;
+    .redes{
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        transition: 0.5;
+        font-size: 18px;
+        font-weight: 500;
+        &:hover{
+            color: white
+        }
+    }
+}
+.pie-c{
+    display: flex;
+    justify-content: center;
+    background-color: $color-sec;
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+    font-weight: 500;
+}

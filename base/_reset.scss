@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: $color-fond;
+    background-image: url(/images/fondo.png);
+}
+header{
+    width: 100%;
+    background-color: $color-prin;
+    background-size: cover;
+    .h-logo{
+        display: flex;
+        justify-content: center;
+        .logo{
+            width: 305px;
+        }  
+    }
+}

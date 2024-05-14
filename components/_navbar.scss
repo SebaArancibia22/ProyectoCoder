@@ -1,0 +1,27 @@
+/*Estilos del nav*/
+
+nav{
+    ul{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        list-style: none;
+        font-size: 18px;
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+        margin: auto auto ;
+    }
+    li{
+        width: 200px;
+        text-align: center;
+        border: 2px dashed black;
+        padding: 10px;
+        background-color: white;
+        transition:linear 0.3s;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-sec;
+        }
+    }
+}
