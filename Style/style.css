@@ -25,6 +25,10 @@ header .h-logo .logo {
 }
 
 /*Estilos del nav*/
+.navbar-expand-lg .navbar-collapse {
+  width: 100%;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -540,6 +544,7 @@ nav li:hover {
     font-size: 18px;
     padding: 40px;
     text-align: center;
+    gap: 50px;
   }
   #box-don #p-don {
     font-size: 25px;
