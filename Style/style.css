@@ -258,6 +258,9 @@ nav li:hover {
   background-color: #f5bce5;
   padding: 30px;
 }
+.form-con .form-control {
+  resize: none;
+}
 
 /*Pagína Donaciones*/
 #box-don {
